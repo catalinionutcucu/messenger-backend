@@ -1,4 +1,6 @@
 using Messenger.Handlers;
+using Messenger.Models;
+using Messenger.Extensions;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);

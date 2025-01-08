@@ -18,45 +18,45 @@ public sealed class RequestError
     }
 
     /// <summary>
-    /// Creates a <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.RequestInvalid" /> representing a request invalid error
+    /// Creates an instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.RequestInvalid" /> representing a request invalid error
     /// </summary>
-    /// <returns>A <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.RequestInvalid" /> representing a request invalid error</returns>
+    /// <returns>An instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.RequestInvalid" /> representing a request invalid error</returns>
     public static RequestError RequestInvalid(string code, params IEnumerable<string> issues)
     {
         return new(RequestErrorType.RequestInvalid, code, issues);
     }
 
     /// <summary>
-    /// Creates a <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.RequestNotAllowed" /> representing a request not allowed error
+    /// Creates an instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.RequestNotAllowed" /> representing a request not allowed error
     /// </summary>
-    /// <returns>A <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.RequestNotAllowed" /> representing a request not allowed error</returns>
+    /// <returns>An instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.RequestNotAllowed" /> representing a request not allowed error</returns>
     public static RequestError RequestNotAllowed(string code, params IEnumerable<string> issues)
     {
         return new(RequestErrorType.RequestNotAllowed, code, issues);
     }
 
     /// <summary>
-    /// Creates a <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.ResourceNotFound" /> representing a resource not found error
+    /// Creates an instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.ResourceNotFound" /> representing a resource not found error
     /// </summary>
-    /// <returns>A <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.ResourceNotFound" /> representing a resource not found error</returns>
+    /// <returns>An instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.ResourceNotFound" /> representing a resource not found error</returns>
     public static RequestError ResourceNotFound(string code, params IEnumerable<string> issues)
     {
         return new(RequestErrorType.ResourceNotFound, code, issues);
     }
 
     /// <summary>
-    /// Creates a <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.ResourceConflict" /> representing a resource conflict error
+    /// Creates an instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.ResourceConflict" /> representing a resource conflict error
     /// </summary>
-    /// <returns>A <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.ResourceConflict" /> representing a resource conflict error</returns>
+    /// <returns>An instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.ResourceConflict" /> representing a resource conflict error</returns>
     public static RequestError ResourceConflict(string code, params IEnumerable<string> issues)
     {
         return new(RequestErrorType.ResourceConflict, code, issues);
     }
 
     /// <summary>
-    /// Creates a <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.Failure" /> representing a failure error
+    /// Creates an instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.Failure" /> representing a failure error
     /// </summary>
-    /// <returns>A <see cref = "RequestError" /> instance of type <see cref = "RequestErrorType.Failure" /> representing a failure error</returns>
+    /// <returns>An instance of <see cref = "RequestError" /> with the type <see cref = "RequestErrorType.Failure" /> representing a failure error</returns>
     public static RequestError Failure(string code, params IEnumerable<string> issues)
     {
         return new(RequestErrorType.Failure, code, issues);
