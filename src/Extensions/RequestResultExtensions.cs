@@ -7,9 +7,9 @@ namespace Messenger.Extensions;
 public static partial class RequestResultExtensions
 {
     /// <summary>
-    /// Converts the request result to an HTTP response of type <see cref = "IResult" /> based on the status
+    /// Converts the request result to an HTTP response of type <see cref = "IResult" /> based on the result state and error type
     /// </summary>
-    /// <returns>An HTTP response of type <see cref = "IResult" /> based on the status</returns>
+    /// <returns>An HTTP response of type <see cref = "IResult" /></returns>
     public static IResult ToHttpResponse<TResult>(this RequestResult<TResult> result)
     {
         return result.Map(
@@ -25,9 +25,9 @@ public static partial class RequestResultExtensions
 public static partial class RequestResultExtensions
 {
     /// <summary>
-    /// Converts the request result to an HTTP response of type <see cref = "IResult" /> based on the status
+    /// Converts the request result to an HTTP response of type <see cref = "IResult" /> based on the result state and error type
     /// </summary>
-    /// <returns>An HTTP response of type <see cref = "IResult" /> based on the status</returns>
+    /// <returns>An HTTP response of type <see cref = "IResult" /></returns>
     public static IResult ToHttpResponse(this RequestResult result)
     {
         return result.Map(

@@ -6,9 +6,9 @@ namespace Messenger.Extensions;
 public static class RequestErrorExtensions
 {
     /// <summary>
-    /// Converts the request error to an HTTP response of type <see cref = "IResult" /> based on the type
+    /// Converts the request error to an HTTP response of type <see cref = "IResult" /> based on the error type
     /// </summary>
-    /// <returns>An HTTP response of type <see cref = "IResult" /> based on the type</returns>
+    /// <returns>An HTTP response of type <see cref = "IResult" /></returns>
     public static IResult ToHttpResponse(this RequestError error)
     {
         return Results.Problem(
